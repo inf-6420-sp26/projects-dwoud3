@@ -1,0 +1,16 @@
+table {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 36%;
+    border-collapse: collapse;
+}
+/* Adds vertical border to the table header*/
+th {
+    border: 1px solid gray;
+}
+/* Add vertical border to the table data cells*/ 
+table td {
+    padding: 2px;
+    border: 1px solid gray;
+}
