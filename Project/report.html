@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+</head>
+<body>
+    <header>
+        <h1>Research Report</h1>
+        <p><em>Dave Woudstra</em></p>
+        <hr>
+        <p>
+            <strong>JUMP TO:</strong>
+            <a href="#page_selection">Page Selection</a>&nbsp;&nbsp;
+            <a href="#major_sections">Major Sections</a>&nbsp;&nbsp;
+            <a href="#headings">Headings</a>&nbsp;&nbsp;
+            <a href="#lists">Lists</a>&nbsp;&nbsp;
+            <a href="#links">Links</a>&nbsp;&nbsp;
+            <a href="#tables">Tables</a>&nbsp;&nbsp;
+            <a href="#accessibility">Accessibility</a>&nbsp;&nbsp;
+            <a href="#validation">Validation</a>&nbsp;&nbsp;
+            <a href="#summary">Summary</a>
+        </p>
+    </header>
+    <main>
+        <h2 id="page_selection">Bachelor of Science in Applied Health Sciences</h2>
+        <p>
+            <a href="https://applebaum.wayne.edu/bsahs"
+                target="_blank">https://applebaum.wayne.edu/bsahs</a>
+        </p>
+        <p>
+            I chose the Bachelor of Science program offered by the Applebaum college in Applied Health Sciences. <br>
+            This site fits the requirements of the assignment.  It has a well defined header and footer; over 25 <br>
+            links; a main content area; 3 distinct lists; and one image.  And unlike many of the other program <br>
+            sites I perused, it has at least 3 heading levels. 
+        </p>
+        <hr>
+            <h3 id="major_sections">Major Sections</h3>
+                
+                <h4>Site header</h4>
+                <img src="images/siteHeader.png" alt="Site Header of Bachelor of Science in Applied Health Sciences">
+                <p><code>&lt;header&gt;</code></p>
+                <p>
+                    As this program page is one of many at Wayne State University, it is partcularly appropriate <br>
+                    to use the HTML5 semantic element of <code>&lt;header&gt;</code>. Not only does this provide uniform <br>
+                    branding by employing the Wayne State University colors and logo, but it is an efficient way to anchor <br>
+                    links to help the user traverse the entirety of the Wayne State University site. 
+                </p>
+
+                <h4>Main Navigation</h4>
+                <img src="images/mainNavigation.png" alt="Main Navigation of Bachelor of Science in Applied Health Sciences">
+                <p><code>&lt;nav&gt;</code></p>
+                <p>
+                    As this section is used to traverse additional pages relating to the specific program of Applied Health <br>
+                    Sciences, the <code>&lt;nav&gt;</code> HTML5 semantic element is most appropriate. Using this element is <br>
+                    crucial for search engine optimization and accessibility due to recognizability for screen readers.  
+                </p>
+
+                <h4>Primary Content</h4>
+                <img src="images/primaryContent.png" alt="Primary Content of Bachelor of Science in Applied Health Sciences">
+                <p><code>&lt;main&gt;</code></p>
+                <p>
+                    Using the <code>&lt;main&gt;</code> HTML5 semantic element is an effective way to provide structure to the <br>
+                    HTML code for both readability as well as the purposes of editing.  In addition, using the structural element <br>
+                    enhances the effectiveness of indexing and accessiblity.
+                </p>
+
+                <h4>Page Footer</h4>
+                <img src="images/pageFooter.png" alt="Page Footer of Bachelor of Science in Applied Health Sciences">
+                <p><code>&lt;footer&gt;</code></p>
+                <p>
+                    Again, due to this program being one of the many at Wayne State University, the branding inherent in the <br>
+                    semantic element of the <code>&lt;footer&gt;</code> is useful for evoking a feeling of cohesion in the user. <br>
+                    This is also a good element with which to anchor program specfic contact information as well as external social <br>
+                    media links.
+                </p>
+                <hr>
+            <h3 id="headings">Headings</h3>
+            <p>The site uses 4 levels of headings, located within the<br><br> 
+                <code>&lt;main&gt;</code> <br> 
+                <code>&lt;footer&gt;</code><br><br> 
+                elements, though I would only use 3.<br><br>
+            </p>
+            <p>The following are the text and the corresponding levels as moving through in document order:<br><br>
+                <ol>
+                    <li>
+                        "Bachelor of Science in Applied Health Sciences" - H1. <br>
+                        This should be the first level as it is the subject of the entire page.
+                    </li><br>
+                    <li>
+                        "Building a Strong Foundation for a Successful Future" - H2. <br>
+                        This should be the next level down, as it is a subset of the program in level H1. <br>
+                        (It should be noted that the website codes this as level H3 in the HTML)
+                    </li><br>
+                    <li>
+                        "Graduates will emerge with a strong foundation in:" - H3. <br>
+                        This is a direct subset of the previous section.<br>
+                        (It should be noted that the website codes this as level H4 in the HTML)
+                    </li><br>
+                    <li>
+                        "Direct Admission to WSU Applebaum" - H2. <br>
+                        This is not a subset of the previous H2, so it should become another H2, as a subset of the H1 program.<br>
+                        (It should be noted that the website codes this as level H3)
+                    </li><br>
+                    <li>
+                        "Attend an Information Meeting" - H2. <br> 
+                        As this a subset of the program, it should be another H2. <br>
+                        (It should be noted that the website codes this as level H3)
+                    </li><br>
+                    <li>
+                        "Additional Information" - H2. <br>
+                        As this is a subset of the program, it should be another H2. <br>
+                        (It should be noted that the website codes this as level H3)
+                    </li><br>
+                    <li>
+                        "Bachelor of Science in Applied Health Sciences" - H2 <br>
+                        Though this is the name of the program, as it is in the footer element, it should be less prominent.
+                    </li><br>
+                    <li>
+                        "Eugene Applebaum College of Pharmacy and Health Sciences" - H3 <br>
+                        As this is not the specific program, it should be down one level from the program name next to it in the footer.
+                    </li><br>
+                    <li>
+                        "Resources" - H3 <br>
+                        This should have the same prominence as what is next to it.
+                    </li>
+                </ol>               
+            </p>
+            <hr>
+            <h3 id="lists">Lists</h3>
+            <img src="images/foundationList.png" alt="List of foundation skills">
+            <p>
+                This list should be <code>&lt;ul&gt;</code>, since the items need not be in any particular order. <br>
+                The items in this list are plain text.  
+            </p>
+            <img src="images/admissionList.png" alt="List of direct admission benefits">
+            <p>
+                This list should be <code>&lt;ul&gt;</code>, since the items need not be in any particular order. <br>
+                The items in this list are plain text. 
+            </p>
+            <hr>
+            <h3 id="links">Links</h3>
+                <h4>Internal Links</h4>
+                <p>
+                    There are several internal links listed in the Main Navigation section, including "About" and "FAQ". <br>
+                    I would expect these links to open in the same tab, as the pages are located within Wayne State University. 
+                </p>  
+                <h4>External Links</h4>
+                <p>
+                    There are several external links located in the page footer section, including "Facebook" and "Instagram". <br>
+                    I would expect these links to open in a new tab, since the user is being taken outside of the University, <br>
+                    and Wayne State should ensure that users stay connected to the University site.  These links are indicated with <br>
+                    visual icons.  
+                </p>
+                <hr>
+            <h3 id="tables">Tables</h3>
+            <p>Not present</p>
+            <hr>
+            <h3 id="accessibility">Accessibility Review</h3>
+            <img src="images/accessibilityResults.png" alt="WAVE accessiblity results">
+            <p>
+                Upon analyzing the accessiblity of the site by using the
+                <a href="https://wave.webaim.org"
+                    target="_blank">WAVE</a>
+                there were 6 problematic findings.
+            </p>
+                <ul>
+                    <li>1 Error</li>
+                    <li>5 Alerts</li>
+                </ul>
+            <p>
+                Of the findings the two most problematic were:
+            </p>
+                <ol>
+                    <li>Broken skip link</li>
+                    <li>Skipped heading level</li>
+                </ol>
+            <p>
+                The page does have Null or empty alternative text for the embedded image.<br>
+                One change that could improve accessibilty, would be to reorder the heading levels.
+            </p>
+            <hr>
+            <h3 id="validation">HTML Validation</h3>
+            <img src="images/htmlVal1.png" alt="HTML validator results: first half">
+            <img src="images/htmlVal2.png" alt="HTML validator results: second half">
+            <p>
+                Upon validating the HTML code of the site by using the
+                <a href="https://validator.w3.org"
+                    target="_blank">W3C HTML Validator</a>
+                there were 5 problematic findings.
+            </p>
+                <ul>
+                    <li>4 Errors</li>
+                    <li>1 Warning</li>
+                </ul>
+            <p>
+                The error found in the 16th listed entry, indicates that at line 216 of the code an H3 level heading appears <br>
+                directly after an H1 level heading, thus skipping 1 level.  One way to solve this would be to reorder the headings.
+            </p>
+            <hr>
+            <h3 id="summary">Summary</h3>
+            <p>
+                Overall, the page for the "Bachelor of Science in Applied Health Sciences" program is well designed.  It is well <br>
+                structured in its utilization of proper HTML5 semantic elements.  The page's effective design yields a mostly successfully <br>
+                validated and accessible website.  Fixing the single accessiblilty error of the broken skip link would eliminate all <br>
+                errors of this kind.  In addition, reording the heading levels would alleviate confusion in the structure.
+            </p>
+    </main>
+    <footer>
+      <p>&copy; 2026 | Dave Woudstra</p>  
+    </footer>    
+</body>
+</html>
