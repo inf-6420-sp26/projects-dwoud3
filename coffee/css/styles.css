@@ -1,0 +1,117 @@
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+body {font-family: 'Nunito-Sans', sans-serif;
+}
+
+h1,h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+header {
+    background-image: url(../images/paul-gilmore-145802-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+    h1 {
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 400%;
+        padding-top: 6px;
+
+        margin-top: 0px;
+        margin-bottom: 1px;
+    }
+    
+    p {
+        color: white;
+        font-style: italic;
+
+        margin-top: 1px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+    }
+}
+
+nav {
+
+    background-color: #F0F0F0;
+
+    h2 {
+        font-size: 175%;
+        margin-top: 0;
+        padding-top: 5px;
+
+    }
+    
+    dl {
+        margin-bottom: 0;
+    }
+        
+        dd{
+            
+            margin-left: 0;
+            padding-bottom: 1em;
+        }
+}
+
+
+main {
+    background-color: #E0E0E0;
+
+    h2 {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+   
+    p:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        
+        
+    }
+    img {
+        float: right;
+        width: 240px;
+        height: auto;
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    }
+
+
+}
+
+footer {
+    background-color: #3E1305;
+    color: white;
+    margin-bottom: 150px;
+    
+    P {
+        margin-top: 0px;
+        
+       
+    }
+
+    p:nth-of-type(1) {
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+
+    p:last-of-type {
+        margin-top: 0;
+        padding-bottom: 30px;
+   
+    
+    }
+    
+}
