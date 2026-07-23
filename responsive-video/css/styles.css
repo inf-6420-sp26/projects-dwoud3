@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: antiquewhite;
+
+    .navbar {
+
+        .menu {
+            display: none;
+        }
+
+        .menu-btn {
+            display: block;
+            padding: 1em;
+            color: black;
+        }
+
+        .menu-btn::after {
+            content: "\2630";
+        }
+
+        #checkbox-toggle {
+            display: none;
+        }
+
+        #checkbox-toggle:checked~.menu {
+            display: block;
+        }
+
+        #checkbox-toggle:checked~.menu-btn::after {
+            content: "\2716";
+        }
+
+        .submenu-link {
+            list-style: none;
+        }
+
+        .submenu-link a {
+            text-decoration: none;
+
+        }
+
+        .submenu-link a:hover {
+            outline: 3px solid;
+            outline-offset: 6px;
+            background-color: #fff8c6;
+            border-radius: 6px;
+        }
+
+        .submenu-link a:focus-visible {
+            outline: 3px solid;
+            outline-offset: 6px;
+            background-color: #fff8c6;
+            border-radius: 6px;
+        }
+
+
+
+        @media (min-width: 768px) {
+
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .submenu-link {
+                flex-grow: 1;
+                flex-basis: 13%;
+                list-style: none;
+            }
+
+            .menu-btn {
+                display: none;
+            }
+
+            #checkbox-toggle:checked~.menu {
+                display: flex;
+            }
+
+
+        }
+
+        @media (min-width: 1200px) {
+
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1200px;
+            }
+        }
+    }
+}
+
+main {
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 15px 20px;
+        border: solid 1px red;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .card {
+        background-color: skyblue;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        padding-bottom: 5px;
+        border: solid 1px purple;
+        position: relative;
+    }
+
+    .video-link {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        background: transparent;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+
+    .contents {
+        flex-grow: 1;
+        flex-basis: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .poster {
+        border: greenyellow solid 1px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .poster img {
+        max-width: 100%;
+        height: auto;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .title {
+        border: red solid 1px;
+        flex-grow: 1;
+        flex-basis: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+
+
+    }
+
+    .icon {
+        border: magenta solid 1px;
+        flex-grow: 1;
+        flex-basis: 75%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .description {
+        border: solid 1px darkblue;
+        flex-grow: 1;
+        flex-basis: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* .text { */
+    /* flex-grow: 1; */
+    /* flex-basis: 25%; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+
+
+    @media (min-width: 768px) {
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, auto);
+            gap: 15px 20px;
+            border: solid 1px red;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .card {
+            background-color: skyblue;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            padding-bottom: 5px;
+            border: solid 1px purple;
+        }
+
+        .contents {
+            flex-grow: 1;
+            flex-basis: 66%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .poster {
+            border: greenyellow solid 1px;
+
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .poster img {
+            max-width: 100%;
+            height: auto;
+
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .title {
+            border: red solid 1px;
+            flex-grow: 1;
+            flex-basis: 66%;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+
+
+        }
+
+        .icon {
+            border: magenta solid 1px;
+            flex-grow: 1;
+            flex-basis: 66%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .description {
+            border: solid 1px darkblue;
+            flex-grow: 1;
+            flex-basis: 66%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /* .text { */
+        /* flex-grow: 1; */
+        /* flex-basis: 25%; */
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+        /* } */
+
+    }
+
+    @media (min-width: 1000px) {
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, auto);
+            gap: 15px 20px;
+            border: solid 1px red;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .card {
+            background-color: skyblue;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            padding-bottom: 5px;
+            border: solid 1px purple;
+        }
+
+        .contents {
+            flex-grow: 1;
+            flex-basis: 33%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .poster {
+            border: greenyellow solid 1px;
+
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .poster img {
+            max-width: 100%;
+            height: auto;
+
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .title {
+            border: red solid 1px;
+            flex-grow: 1;
+            flex-basis: 33%;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+
+
+        }
+
+        .icon {
+            border: magenta solid 1px;
+            flex-grow: 1;
+            flex-basis: 33%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .description {
+            border: solid 1px darkblue;
+            flex-grow: 1;
+            flex-basis: 33%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+
+    /* .gallery-grid { */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: repeat(3, 200px); */
+    /* border: solid 1px red; */
+    /* gap: 15px 20px; */
+
+    /* } */
+
+    /* .video-card { */
+    /* display: flex; */
+    /* background-color: blueviolet; */
+
+    /* } */
+    /*  */
+    /* .card-content { */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* background-color: chartreuse; */
+    /* } */
+
+    /* .card-icon-container { */
+    /* display: flex; */
+    /* background-color: deeppink; */
+    /* } */
+
+
+
+
+
+    footer {
+        background-color: antiquewhite;
+        padding-top: 100px;
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+}
