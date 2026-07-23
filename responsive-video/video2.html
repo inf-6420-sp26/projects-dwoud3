@@ -4,11 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Horse Video</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header class="header">
+        <h1> Project 4 Video Library </h1>
 
+
+        <nav class="navbar">
+            <input type="checkbox" id="checkbox-toggle" />
+            <label for="checkbox-toggle" class="menu-btn"></label>
+            <ul class="menu">
+                <li class="submenu-link"><a href="index.html">Home page</a></li>
+                <li class="submenu-link"><a href="video1.html">Video 1</a></li>
+                <li class="submenu-link"><a href="video2.html">Video 2</a></li>
+                <li class="submenu-link"><a href="video3.html">Video 3</a></li>
+                <li class="submenu-link"><a href="video4.html">Video 4</a></li>
+                <li class="submenu-link"><a href="video5.html">Video 5</a></li>
+                <li class="submenu-link"><a href="video6.html">Video 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="single_page">
+            <div class="card">
+                <a href="video2.html" class="video-link"></a>
+                <div class="contents">
+                    <div class="poster">
+                        <video controls poster="assets/images/video-2-frame1.jpg" width="640" height="360">
+                            <source src="assets/videos/video-2.mp4" type="video/mp4">
+                            <p>Your browser does no support this video. <a href="assets/videos/video-2.mp4">Click here
+                                    to view the video directly.</a></p>
+                            <track label="English" kind="captions" srclang="en" src="assets/captions/video-2.vtt"
+                                default>
+
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="title">
+                        <h3>Horses Horsing Around</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="assets/images/video-icon.svg" alt="Video Icon">
+                    </div>
+                    <div class="description">
+                        <p>Majestic creatures. Roaming the plains. Until one day. His name was Ed. And he had something
+                            to say. And he wouldn't stop talking. Kept yammering on about how he saw a bear nearby. And
+                            wouldn't shut up about it. Just kept running and yammering.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="comments_section">
+                <div class="comment_components">
+                    <h4>Comments</h4>
+                    <div class="name">
+                        <h5>Student Rupert</h5>
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/images/avatar-1.svg" alt="Avatar Icon">
+                    </div>
+                    <div class="comment_text">
+                        <p>I like Horses. I want to get a Horse. Then I could ride away from my sister. My sister is
+                            mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want. I like Horses.
+                            I want to get a Horse. Then I could ride away from my sister. My sister is mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want. I like Horses.
+                            I want to get a Horse. Then I could ride away from my sister. My sister is mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want. I like Horses.
+                            I want to get a Horse. Then I could ride away from my sister. My sister is mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want. I like Horses.
+                            I want to get a Horse. Then I could ride away from my sister. My sister is mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want.</p>
+                    </div>
+                    <div class="name">
+                        <h5>Student Sally</h5>
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/images/avatar-2.svg" alt="Avatar Icon">
+                    </div>
+                    <div class="comment_text">
+                        <p>I like Horses. I want to get a Horse. Then I could ride away from my sister. My sister is
+                            mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want.</p>
+                    </div>
+                    <div class="name">
+                        <h5>Student Marissa</h5>
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/images/avatar-3.svg" alt="Avatar Icon">
+                    </div>
+                    <div class="comment_text">
+                        <p>I like Horses. I want to get a Horse. Then I could ride away from my sister. My sister is
+                            mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want.</p>
+                    </div>
+                    <div class="name">
+                        <h5>Student Stuart</h5>
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/images/avatar-4.svg" alt="Avatar Icon">
+                    </div>
+                    <div class="comment_text">
+                        <p>I like Horses. I want to get a Horse. Then I could ride away from my sister. My sister is
+                            mean to me all
+                            the time, so I think I should be able to ride away from her whenever I want.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 | Dave Woudstra aka <em>the midwest man</em></p>
+
+    </footer>
 </body>
 
 </html>

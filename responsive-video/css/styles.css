@@ -74,6 +74,7 @@ header {
                 flex-grow: 1;
                 flex-basis: 13%;
                 list-style: none;
+
             }
 
             .menu-btn {
@@ -100,6 +101,9 @@ header {
 
 main {
 
+    /* CSS for home page */
+    /* CSS starts with mobile-first */
+
     section {
         display: grid;
         grid-template-columns: 1fr;
@@ -116,9 +120,6 @@ main {
         background-color: skyblue;
         display: flex;
         flex-wrap: wrap;
-        /* flex-direction: column; */
-        /* justify-content: space-between; */
-        /* align-items: center; */
         padding-bottom: 5px;
         border: solid 1px purple;
         position: relative;
@@ -138,6 +139,7 @@ main {
         flex-basis: 100%;
         padding-left: 10px;
         padding-right: 10px;
+        max-width: 800px;
     }
 
     .poster {
@@ -145,6 +147,9 @@ main {
 
         padding-left: 10px;
         padding-right: 10px;
+        padding-top: 5px;
+
+
     }
 
     .poster img {
@@ -154,6 +159,8 @@ main {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+
 
     .title {
         border: red solid 1px;
@@ -182,12 +189,8 @@ main {
         padding-right: 10px;
     }
 
-    /* .text { */
-    /* flex-grow: 1; */
-    /* flex-basis: 25%; */
-    /* padding-left: 10px; */
-    /* padding-right: 10px; */
 
+    /* style for larger screens--tablets, etc. */
 
     @media (min-width: 768px) {
         section {
@@ -262,14 +265,11 @@ main {
             padding-right: 10px;
         }
 
-        /* .text { */
-        /* flex-grow: 1; */
-        /* flex-basis: 25%; */
-        /* padding-left: 10px; */
-        /* padding-right: 10px; */
-        /* } */
+
 
     }
+
+    /* media rule for large screens: desktops, etc. */
 
     @media (min-width: 1000px) {
 
@@ -289,9 +289,6 @@ main {
             background-color: skyblue;
             display: flex;
             flex-wrap: wrap;
-            /* flex-direction: column; */
-            /* justify-content: space-between; */
-            /* align-items: center; */
             padding-bottom: 5px;
             border: solid 1px purple;
         }
@@ -346,41 +343,58 @@ main {
         }
     }
 
+    /* CSS for individual pages */
+    /* starts with mobile first, and maxes out at 800px */
 
-    /* .gallery-grid { */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: repeat(3, 200px); */
-    /* border: solid 1px red; */
-    /* gap: 15px 20px; */
+    .single_page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border: solid 1px red;
 
-    /* } */
-
-    /* .video-card { */
-    /* display: flex; */
-    /* background-color: blueviolet; */
-
-    /* } */
-    /*  */
-    /* .card-content { */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* background-color: chartreuse; */
-    /* } */
-
-    /* .card-icon-container { */
-    /* display: flex; */
-    /* background-color: deeppink; */
-    /* } */
-
-
-
-
-
-    footer {
-        background-color: antiquewhite;
-        padding-top: 100px;
-        margin-bottom: 0;
-        margin: 0 auto;
     }
+
+
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .comments_section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .comment_components {
+        flex-grow: 1;
+        flex-basis: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 800px;
+    }
+
+
+
+    .avatar img {
+        max-width: 50px;
+        max-height: 50px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+footer {
+    background-color: antiquewhite;
+    padding-top: 100px;
+    margin-bottom: 0;
+    margin: 0 auto;
 }
