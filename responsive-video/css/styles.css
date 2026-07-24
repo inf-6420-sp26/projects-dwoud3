@@ -125,6 +125,21 @@ main {
         position: relative;
     }
 
+
+    .card a:hover {
+        outline: 3px solid;
+        outline-offset: 6px;
+        /* background-color: #fff8c6; */
+        border-radius: 6px;
+    }
+
+    .card a:focus-visible {
+        outline: 3px solid;
+        outline-offset: 6px;
+        /* background-color: #fff8c6; */
+        border-radius: 6px;
+    }
+
     .video-link {
         position: absolute;
         inset: 0;
